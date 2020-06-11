@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+.campaignheader {
+  border: 1px solid black;
+  padding:5px;
+  margin-bottom:5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  width:inherit;
+}
+
+h4.name{
+  margin:0;
+}
+
+.campaignheader p {
+  margin:0;
+  padding:10px;
+  font-size: medium;
+  font-weight: 800;
+}
+
+ul.name{
+  margin:0;
+}
+
+.location{
+  padding:5px;
+  margin-bottom:5px;
+}

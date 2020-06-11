@@ -1,0 +1,19 @@
+section.encountercontainer {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:inherit;
+}
+
+.encounterbody {
+  margin-top:7.5vh;
+  width:97vw;
+  height:80vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.encountermembers * {
+  text-align: center;
+}
