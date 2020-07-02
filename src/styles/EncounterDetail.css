@@ -1,0 +1,97 @@
+main.encounterbody{
+  position:fixed;
+  top:10vh;
+  width:100vw;
+  height:82vh;
+  background-color: black;
+  color:#aaaaaa;
+  overflow:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.encounterbody p,table {
+  width:100vw;
+  text-align: center;
+}
+
+main.encounterbody p {
+  padding-top:20px;
+  font-style: italic;  
+  font-size:16px;
+}
+
+tbody {
+  width:95vw;
+  margin:0;
+  padding:0
+}
+
+table.encountermembers {
+  margin:0;
+  margin-left:2.5vw;
+  table-layout:auto;
+  display:flex;
+  justify-content: flex;
+  align-items: center;
+}
+
+a.viewLink {
+  width:12.5vw;
+  height:5vh;
+  border:none;
+}
+
+td.viewLink {
+  padding:1px;
+  width:50px
+}
+
+td.name {
+  width:75px;
+  overflow:hidden;
+}
+
+td.buttons {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button.editButton,button.viewLink,button.saveEdit {
+  border:1px solid #444444;
+  width:12.5vw;
+  height:5vh;
+  font-weight: 600;
+  background-color: #b40a0a;
+  color: #aaaaaa;
+  text-shadow:-1px -1px 0 #444444, 1px 1px 0 #444444,1px -1px 0 #444444, -1px 1px 0 #444444;
+}
+
+/*Edit Stylings*/
+
+input.pcname {
+  width:75px;
+  margin:0;
+}
+
+input.initiative {
+  width:25px;
+  margin:0;
+}
+
+input.ac {
+  width:25px;
+  margin:0;
+}
+
+input.hp,input.hpmax {
+  width:35px;
+  margin:0;
+}
+
+button.saveEdit {
+  height: 64.78px;
+}

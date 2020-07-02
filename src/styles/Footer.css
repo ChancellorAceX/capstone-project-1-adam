@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+footer {
+  position:fixed;
+  bottom:0;
+  right:0;
+  margin:0;
+  padding:0;
+  height:8vh;
+  width:100vw;
+  border-top: 1px black solid;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #333333;
+}
+
+img.footer {
+  height:5vh;
+  margin:1.5vh;
+}

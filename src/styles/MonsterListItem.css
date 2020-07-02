@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+li.monsterListing {
+  height:fit-content;
+  min-height:25px;
+  width:100vw;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border:1px solid gray;
+  padding:5px;
+  background-color: black;
+}
+
+li.monsterListing p {
+  margin:0;
+  color:white;
+}
+
+p.name{
+  width:30vw;
+  padding-left: 5px;
+  flex-shrink:3;
+}
+
+p.type{
+  width:40vw;
+  flex-shrink:1;
+}
+
+p.cr {
+  width:20vw;
+  flex-shrink:5
+}

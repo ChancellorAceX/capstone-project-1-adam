@@ -1,0 +1,29 @@
+main.loginContainer {
+  position:fixed;
+  top:10vh;
+  background-color: black;
+  color:#aaaaaa;
+  height:82vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+ 
+form.loginForm {
+  padding:5vw;
+  text-align: center;
+}
+
+form.loginForm * {
+  margin-bottom: 5vh;
+}
+ 
+p.login {
+  text-align: center;
+}
+
+form.loginForm div {
+  color:#ba0404;
+  font-weight: 800;
+}

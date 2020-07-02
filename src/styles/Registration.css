@@ -1,0 +1,40 @@
+form.registration {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height:82vh;
+  width:80vw;
+}
+
+form.registration section {
+  width:80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+form.registration * {
+  margin:0
+}
+
+form.registration div {
+  color:#ba0404;
+  font-weight: 800;
+}
+
+form.registration h2 {
+  text-align: center;
+}
+
+main.registration {
+  position:fixed;
+  width:100vw;
+  top:10vh;
+  background-color: black;
+  color:#aaaaaa;
+  height:82vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

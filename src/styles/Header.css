@@ -1,0 +1,18 @@
+header {
+  position:fixed;
+  top:0;
+  height:15vh;
+  border-bottom:2px solid black;
+  background-color: #333333;
+}
+
+header h1 {
+  text-align: center;
+  margin:5px;
+  color:#ba0404;
+  text-shadow: 2px 2px 5px black;
+}
+
+header img {
+  cursor:pointer;
+}

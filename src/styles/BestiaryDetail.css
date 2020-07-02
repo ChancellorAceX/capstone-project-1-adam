@@ -1,0 +1,50 @@
+ * {
+  box-sizing: border-box;
+}
+
+header.bdheader {
+  display:fixed;
+  top:0;
+  width:100vw;
+  height:10vh;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2.monsterName {
+  color:#ba0404;
+  text-shadow: 2px 2px 5px black;
+}
+
+header img {
+  height:5vh;
+  margin-left:2.5vw;
+  margin-right:2.5vw;
+}
+
+main.bdmain {
+  position:fixed;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  height:82vh;
+  top:10vh;
+  color:#aaaaaa;
+  width:calc(100vw + 15px);
+  background-color: black;
+  overflow:auto;
+}
+
+table {
+  max-width:95vw;
+  margin-bottom: 30px;
+  border: 1px solid #666666;
+  position:relative;
+  right:7.5px;
+}
+
+table * {
+  border: 1px solid #666666;
+  padding:3px;
+}

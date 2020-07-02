@@ -1,0 +1,11 @@
+button.deleteButton {
+  width:12.5vw;
+  height:5vh;
+  font-size:22px;
+  font-weight: 400;
+  color: #b40a0a;
+  background-color: #444444;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}

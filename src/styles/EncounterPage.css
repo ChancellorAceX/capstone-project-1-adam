@@ -1,0 +1,117 @@
+main.encounters {
+  position:fixed;
+  top:10vh;
+  height:82vh;
+  width:calc(100vw + 15px);
+  background-color: black;
+  color:#ba0404;
+  overflow:auto;
+}
+
+section.addButtonContainer {
+  margin-top:5px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.addButtonContainer button {
+  font-weight: 600;
+  width:45vw;
+  border-radius:20px;
+  background-color: #b40a0a;
+  color: #aaaaaa;
+  text-shadow:-1px -1px 0 #444444, 1px 1px 0 #444444,1px -1px 0 #444444, -1px 1px 0 #444444;
+}
+
+section.campaignListing {
+  width:100vw;
+  left:0;
+}
+
+.campaignTitle {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right:5px;
+  padding-left:5px;
+  margin-bottom:0;
+  padding-bottom:8px;
+  border-bottom:solid 1px #b40a0a; 
+}
+
+ul.campaignListing{
+  list-style-type: none;
+  padding:0;
+  text-decoration: none;
+}
+
+ li.encounterListing {
+  height:fit-content;
+  min-height:25px;
+  width:100vw;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border:1px solid gray;
+  padding:5px;
+  padding-left:15px;
+  background-color: black;
+  color:#aaaaaa;
+}
+
+ul.campaignListing a {
+  text-decoration:none;
+}
+
+
+/* p.name{
+  width:30vw;
+  padding-left: 5px;
+  flex-shrink:3;
+}
+
+p.type{
+  width:40vw;
+  flex-shrink:1;
+}
+
+p.cr {
+  width:20vw;
+  flex-shrink:5
+} */
+
+/* * {
+  box-sizing: border-box;
+}
+
+.campaignheader {
+  border: 1px solid black;
+  padding:5px;
+  margin-bottom:5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+h4.name{
+  margin:0;
+}
+
+.campaignheader p {
+  margin:0;
+  padding:10px;
+  font-size: medium;
+  font-weight: 800;
+}
+
+ul.name{
+  margin:0;
+}
+
+.location{
+  padding:5px;
+  margin-bottom:5px;
+} */

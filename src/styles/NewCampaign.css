@@ -1,0 +1,83 @@
+main.newCampaign {
+  width:calc(100vw + 15px);
+}
+
+form.newCampaign {
+  position:fixed;
+  top:10vh;
+  padding:10px;
+  height:82vh;
+  background-color: black;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow:auto;
+}
+
+h3.characterInputs {
+  color:#b40a0a;
+  text-align:center;
+}
+
+section.inputSections {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button.addPlayer {
+  font-weight: 600;
+  width:40vw;
+  border-radius:20px;
+  background-color: #b40a0a;
+  color: #aaaaaa;
+  text-shadow:-1px -1px 0 #444444, 1px 1px 0 #444444,1px -1px 0 #444444, -1px 1px 0 #444444; 
+}
+
+section.inputSections * {
+  margin:0;
+  margin-bottom: 10px;
+  width:70vw;
+}
+
+section.inputSections input {
+  width:60vw;
+}
+
+main.newCampaign table {
+  width:90vw;
+  color:#aaaaaa;
+}
+
+section.tableBox {
+  margin-top:15px;
+  width:95vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.Campaign {
+  width:100vw;
+  position:fixed;
+  bottom: 8vh;
+  border-top: 1px solid #aaaaaa;
+  padding-top:4px;
+  padding-bottom:4px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+}
+
+section.Campaign button {
+  font-weight: 600;
+  width:40vw;
+  border-radius:20px;
+  background-color: #b40a0a;
+  color: #aaaaaa;
+  text-shadow:-1px -1px 0 #444444, 1px 1px 0 #444444,1px -1px 0 #444444, -1px 1px 0 #444444;
+}

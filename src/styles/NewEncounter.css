@@ -1,0 +1,105 @@
+form.newEncounter {
+  position:fixed;
+  top:10vh;
+  height:82vh;
+  width:100vw;
+  overflow:auto;
+  background-color: black;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section.encounterInfo {
+  display: flex;
+  width:100vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom:3vh;
+  border-bottom:solid 1px #b40a0a;
+  margin-bottom: 2vh;
+}
+
+section.encounterInfo * {
+  width:70vw;
+}
+
+section.labelFieldGroup {
+  margin-top:10px;
+}
+
+section.labelFieldGroup label {
+  color:#aaaaaa;
+}
+
+section.labelFieldGroup input {
+  margin:0;
+}
+
+section.labelFieldGroup textarea {
+  background-color: #222222;
+  color:#aaaaaa;
+}
+
+section.labelFieldGroup select {
+  background-color: #222222;
+  color:#aaaaaa;
+}
+
+section.addMonster {
+  width:100vw;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.addMonster select {
+  background-color: #222222;
+  color: #aaaaaa;
+}
+
+section.addMonster button {
+  font-weight: 600;
+  width:fit-content;
+  border-radius:20px;
+  background-color: #b40a0a;
+  color: #aaaaaa;
+  text-shadow:-1px -1px 0 #444444, 1px 1px 0 #444444,1px -1px 0 #444444, -1px 1px 0 #444444;
+}
+
+table.addMonsters {
+  width:90vw;
+  color:#aaaaaa;
+}
+
+section.tableBox {
+  margin-top:15px;
+  width:95vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.buttonContainer {
+  position:fixed;
+  width:100vw;
+  left:0;
+  bottom:8vh;
+  height:30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-top:1px solid #aaaaaa;
+  background-color: black;
+}
+
+button.encounterSave {
+  font-weight: 600;
+  width:80vw;
+  border-radius:20px;
+  background-color: #b40a0a;
+  color: #aaaaaa;
+  text-shadow:-1px -1px 0 #444444, 1px 1px 0 #444444,1px -1px 0 #444444, -1px 1px 0 #444444;
+}
