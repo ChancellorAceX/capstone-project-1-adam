@@ -75,7 +75,7 @@ export default withRouter(class Registration extends React.Component {
               <label htmlFor='nickname'>Nickname:</label>
               <input type='text' id='nickname' placeholder='nickname' required />
             </section>
-            <button type='submit'>Submit</button>
+            <button className='registrationSubmit' type='submit'>Submit</button>
           </form>
         </main>
       </section>

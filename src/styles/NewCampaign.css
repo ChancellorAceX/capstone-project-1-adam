@@ -7,6 +7,7 @@ form.newCampaign {
   top:10vh;
   padding:10px;
   height:82vh;
+  width:100vw;
   background-color: black;
   display:flex;
   flex-direction: column;
@@ -40,6 +41,10 @@ section.inputSections * {
   margin:0;
   margin-bottom: 10px;
   width:70vw;
+}
+
+#ac {
+  margin-bottom:10px;
 }
 
 section.inputSections input {
@@ -80,4 +85,8 @@ section.Campaign button {
   background-color: #b40a0a;
   color: #aaaaaa;
   text-shadow:-1px -1px 0 #444444, 1px 1px 0 #444444,1px -1px 0 #444444, -1px 1px 0 #444444;
+}
+
+input.title {
+  width:40vw;
 }

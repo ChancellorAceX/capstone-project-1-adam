@@ -1,7 +1,7 @@
-main.encounterbody{
+ main.encounterbody{
   position:fixed;
   top:10vh;
-  width:100vw;
+  width:calc(100vw + 20px);
   height:82vh;
   background-color: black;
   color:#aaaaaa;
@@ -11,53 +11,63 @@ main.encounterbody{
   align-items: center;
 }
 
-main.encounterbody p,table {
+ table.encountermembers {
+  margin:0;
   width:100vw;
-  text-align: center;
-}
+} 
 
-main.encounterbody p {
-  padding-top:20px;
-  font-style: italic;  
-  font-size:16px;
-}
-
-tbody {
+table.encountermembers tr{
   width:95vw;
-  margin:0;
-  padding:0
 }
 
-table.encountermembers {
+table.encountermembers th.viewLink,td.viewLink{
+  width:calc(12.5vw + 3px);
+  padding:0;
   margin:0;
-  margin-left:2.5vw;
-  table-layout:auto;
-  display:flex;
-  justify-content: flex;
-  align-items: center;
 }
 
-a.viewLink {
+table.encountermembers th.name,td.name{
+  width:30vw;
+  margin:0;
+  padding:0;
+}
+
+table.encountermembers th.init,td.init{
+  width:10vw;
+  margin:0;
+  padding:0;
+}
+
+table.encountermembers th.ac,td.ac {
+  width:10vw;
+  margin:0;
+  padding:0;
+}
+
+table.encountermembers th.hp,td.hp {
+  width: 15vw;
+  margin:0;
+  padding:0;
+}
+
+table.encountermembers th.buttons,td.buttons {
+  width:calc(12.5vw + 3px);
+  margin:0;
+  padding:0;
+
+}
+
+table.encountermembers a.viewLink {
   width:12.5vw;
   height:5vh;
-  border:none;
+  border:0;
+  padding:0;
 }
 
-td.viewLink {
-  padding:1px;
-  width:50px
-}
-
-td.name {
-  width:75px;
-  overflow:hidden;
-}
-
-td.buttons {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+table.encountermembers td {
+  margin-left:1px;
+  padding:5px;
+  text-align: center;
 }
 
 button.editButton,button.viewLink,button.saveEdit {
@@ -72,23 +82,29 @@ button.editButton,button.viewLink,button.saveEdit {
 
 /*Edit Stylings*/
 
-input.pcname {
-  width:75px;
+#editname,#editinit,#editac,#edithp,#editbuttons {
+  padding:0;
+}
+
+textarea.pcname {
+  width:20vw;
   margin:0;
+  word-wrap: normal;
 }
 
 input.initiative {
-  width:25px;
+  width:8vw;
   margin:0;
 }
 
 input.ac {
-  width:25px;
+  width:8vw;
   margin:0;
 }
 
 input.hp,input.hpmax {
-  width:35px;
+  width:10vw;
+  max-width:60px;
   margin:0;
 }
 

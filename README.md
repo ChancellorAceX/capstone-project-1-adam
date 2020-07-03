@@ -1,10 +1,10 @@
 Left to do:
 
 Testing
-Styling
 
 Fixes:
 Save Campaign should reset addCharacters
+Should redirect to encounters
 
 
 

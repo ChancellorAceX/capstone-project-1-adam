@@ -18,7 +18,7 @@ export default withRouter(function NewCampaign(props) {
             <input className='character' type='text' onChange={props.setAddCharacter} placeholder='Name' value={props.addCharacter.character} />
             <input className='pcclass' placeholder='Class' type='text' onChange={props.setAddCharacter} value={props.addCharacter.pcclass} />
             <input className='level' placeholder='Level' type='number' onChange={props.setAddCharacter} value={props.addCharacter.level} />
-            <input className='ac' placeholder='AC' type='number' onChange={props.setAddCharacter} value={props.addCharacter.ac} />
+            <input className='ac' id='ac' placeholder='AC' type='number' onChange={props.setAddCharacter} value={props.addCharacter.ac} />
             <input className='maxhp' placeholder='Max HP' type='number' onChange={props.setAddCharacter} value={props.addCharacter.maxhp} />
             <button className='addPlayer' onClick={props.addToAddCharacters}>+ Player</button>
           </section>

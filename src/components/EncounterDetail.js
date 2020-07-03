@@ -25,7 +25,7 @@ export default withRouter(class EncounterDetail extends React.Component {
     return (
       <section className='encountercontainer'>
         <Header 
-          pageName='Encounter Detail'
+          pageName={this.props.encounters.find(e=>e.eid=== +this.props.match.params.eid).encountername}
           history={this.props.history}
         />
         <main className='encounterbody'>
@@ -33,11 +33,12 @@ export default withRouter(class EncounterDetail extends React.Component {
           <table className='encountermembers'>
             <tbody>
               <tr>
-                <th></th>
-                <th>Name</th>
-                <th>Init</th>
-                <th>AC</th>
-                <th>HP</th>
+                <th className='viewLink'></th>
+                <th className='name'>Name</th>
+                <th className='init'>Init</th>
+                <th className='ac'>AC</th>
+                <th className='hp'>HP</th>
+                <th className='buttons'></th>
               </tr>
               {this.props.encounterData.sort((a,b)=>b.initiative-a.initiative).map((character,i) =>
                 <CharacterEncounterListing

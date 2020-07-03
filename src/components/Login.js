@@ -68,7 +68,7 @@ export default withRouter(class Login extends React.Component {
           <input type='text' id='username' placeholder='username' />
           <label htmlFor='password'>Password:</label>
           <input type='text' id='password' placeholder='password'></input>
-          <button type='submit'>Submit</button>
+          <button className='loginSubmit' type='submit'>Submit</button>
         </form>
         <p className='login'>New User? <Link to='/register'>Register Here!</Link></p>
       </main>

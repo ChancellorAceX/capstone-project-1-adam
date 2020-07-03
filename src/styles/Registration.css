@@ -11,6 +11,11 @@ form.registration section {
   width:80vw;
   display: flex;
   justify-content: space-between;
+  max-width: 255px;
+}
+
+form.registration section label {
+  text-align: right;
 }
 
 form.registration * {
@@ -38,3 +43,15 @@ main.registration {
   justify-content: center;
   align-items: center;
 }
+
+button.registrationSubmit {
+  font-weight: 600;
+  width:45vw;
+  max-width:200px;
+  border-radius:20px;
+  background-color: #b40a0a;
+  color: #aaaaaa;
+  text-shadow:-1px -1px 0 #444444, 1px 1px 0 #444444,1px -1px 0 #444444, -1px 1px 0 #444444;
+}
+
+

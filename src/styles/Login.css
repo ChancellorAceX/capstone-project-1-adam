@@ -4,6 +4,7 @@ main.loginContainer {
   background-color: black;
   color:#aaaaaa;
   height:82vh;
+  width:100vw;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -13,6 +14,7 @@ main.loginContainer {
 form.loginForm {
   padding:5vw;
   text-align: center;
+  max-width:300px;
 }
 
 form.loginForm * {
@@ -26,4 +28,14 @@ p.login {
 form.loginForm div {
   color:#ba0404;
   font-weight: 800;
+}
+
+button.loginSubmit {
+  font-weight: 600;
+  width:45vw;
+  max-width:200px;
+  border-radius:20px;
+  background-color: #b40a0a;
+  color: #aaaaaa;
+  text-shadow:-1px -1px 0 #444444, 1px 1px 0 #444444,1px -1px 0 #444444, -1px 1px 0 #444444;
 }

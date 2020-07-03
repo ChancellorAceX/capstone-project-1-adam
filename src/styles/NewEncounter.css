@@ -58,11 +58,12 @@ section.addMonster {
 section.addMonster select {
   background-color: #222222;
   color: #aaaaaa;
+  width:55vw;
 }
 
 section.addMonster button {
   font-weight: 600;
-  width:fit-content;
+  width:35vw;
   border-radius:20px;
   background-color: #b40a0a;
   color: #aaaaaa;
@@ -98,6 +99,7 @@ section.buttonContainer {
 button.encounterSave {
   font-weight: 600;
   width:80vw;
+  max-width:350px;
   border-radius:20px;
   background-color: #b40a0a;
   color: #aaaaaa;

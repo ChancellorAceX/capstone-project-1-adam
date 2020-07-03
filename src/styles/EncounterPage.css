@@ -2,7 +2,7 @@ main.encounters {
   position:fixed;
   top:10vh;
   height:82vh;
-  width:calc(100vw + 15px);
+  width:calc(100vw + 20px);
   background-color: black;
   color:#ba0404;
   overflow:auto;
@@ -17,6 +17,7 @@ section.addButtonContainer {
 
 section.addButtonContainer button {
   font-weight: 600;
+  height:4vh;
   width:45vw;
   border-radius:20px;
   background-color: #b40a0a;

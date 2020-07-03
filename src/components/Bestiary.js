@@ -7,7 +7,7 @@ export default function Bestiary(props) {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className='appHeader'>DnD 5e Bestiary</h1>
+        <h1 className='appHeader'>BattleSource</h1>
         <section className='searchBox'>
           <input className='nameSearch' type='text' placeholder='Name Search' value={props.nameSearch} onChange={props.nameSearchChangeHandle} /> |
           <input className='typeSearch' type='text' placeholder='Type Search' value={props.typeSearch} onChange={props.typeSearchChangeHandle} /> |

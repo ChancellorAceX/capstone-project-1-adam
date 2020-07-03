@@ -15,6 +15,7 @@ header.bdheader {
 h2.monsterName {
   color:#ba0404;
   text-shadow: 2px 2px 5px black;
+  padding-right:10vw;
 }
 
 header img {

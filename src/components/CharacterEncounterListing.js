@@ -52,21 +52,21 @@ export default class CharacterEncounterListing extends React.Component {
       (
         <tr>
           <td className='viewLink'></td>
-          <td className='pcname'>
-            <input className={`pcname ${pcid}`} type='text' defaultValue={pcname} onChange={this.props.setUpdateObject} />
+          <td id='editname' className='pcname'>
+            <textarea className={`pcname ${pcid}`} type='text' defaultValue={pcname} onChange={this.props.setUpdateObject} />
           </td>
-          <td className='initiative'>
+          <td id='editinit' className='initiative'>
             <input className={`initiative ${pcid}`} type='number' defaultValue={initiative} onChange={this.props.setUpdateObject} />
           </td>
-          <td className='ac'>
+          <td id='editac' className='ac'>
             <input className={`ac ${pcid}`} type='number' defaultValue={ac} onChange={this.props.setUpdateObject} />
           </td>
-          <td className='hp'>
+          <td id='edithp' className='hp'>
             <input className={`hp ${pcid}`} type='number' defaultValue={hp} onChange={this.props.setUpdateObject} />
             /
             <input className={`hpmax ${pcid}`} type='number' defaultValue={hpmax} onChange={this.props.setUpdateObject} />
           </td>
-          <td className='buttons'>
+          <td id='editbuttons' className='buttons'>
             <button className='saveEdit' onClick={(e) => { this.toggleEdit(e); this.props.updateCharacter(e); }} type='button'>Save
             </button>
           </td>
