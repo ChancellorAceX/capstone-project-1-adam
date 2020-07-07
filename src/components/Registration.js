@@ -50,6 +50,7 @@ export default withRouter(class Registration extends React.Component {
     return (
       <section className='container'>
         <Header
+          loggedInToggle={this.props.loggedInToggle}
           pageName='Register'
           history={this.props.history}
         />

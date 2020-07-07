@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MonsterListItem component renders the full listing component 1`] = `
+<Link
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }
+  to="/bestiary/5"
+>
+  <li
+    className="monsterListing"
+  >
+    <p
+      className="name"
+    >
+      Solar
+    </p>
+    <section
+      className="type"
+    >
+      <p
+        className="type"
+      >
+        Large celestial
+      </p>
+      <p
+        className="type"
+      >
+        lawful good
+      </p>
+    </section>
+    <p
+      className="cr"
+    >
+      CR: 
+      21
+    </p>
+  </li>
+</Link>
+`;

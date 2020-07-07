@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Registration component renders the full Registration component 1`] = `
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
+`;

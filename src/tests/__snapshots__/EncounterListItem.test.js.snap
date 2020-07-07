@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EncounterListItem component renders the full listing component 1`] = `
+<Link
+  to="/encounter/7"
+>
+  <li
+    className="encounterListing"
+  >
+    Green Fields
+    <DeleteButton
+      encounters={
+        Array [
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 6, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 7, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+        ]
+      }
+      id={7}
+      setTargetState="ƒ () {}"
+      target="encounter"
+    />
+  </li>
+</Link>
+`;

@@ -10,6 +10,7 @@ export default withRouter(function NewCampaign(props) {
       <Header
         pageName='New Campaign'
         history={props.history}
+        loggedInToggle={props.loggedInToggle}
       />
       <main className='newCampaign'>
         <form className='newCampaign' onSubmit={props.saveCampaign}>

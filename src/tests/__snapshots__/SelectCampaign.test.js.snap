@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectCampaign component renders the full new campaign form component 1`] = `
+<option
+  value={6}
+>
+  Fillory
+</option>
+`;

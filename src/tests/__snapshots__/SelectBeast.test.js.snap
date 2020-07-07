@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectBeast component renders the full SelectBeast component 1`] = `
+<option
+  value={6}
+>
+  Animated Armor CR:1
+</option>
+`;

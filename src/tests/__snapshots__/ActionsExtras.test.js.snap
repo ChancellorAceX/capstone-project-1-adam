@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionsExtras component renders the complete table unit 1`] = `
+<Fragment>
+  <tr>
+    <th>
+      Heated Body
+    </th>
+  </tr>
+  <tr>
+    <td>
+      A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes (1d10) fire damage.
+    </td>
+  </tr>
+</Fragment>
+`;

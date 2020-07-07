@@ -11,6 +11,7 @@ export default withRouter(class NewEncounter extends React.Component {
     return (
       <section className='container'>
         <Header
+          loggedInToggle={this.props.loggedInToggle}
           pageName='New Encounter'
           history={this.props.history}
         />

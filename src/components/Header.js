@@ -22,10 +22,11 @@ export default withRouter(class Header extends React.Component {
     this.props.history.goBack();
   }
   logoutHandler=(e)=> {
-    const { location, history } = this.props;
-    const destination = (location.state || {}).from || '/login';
+    TokenService.clearAuthToken()
+    this.props.loggedInToggle(false)
+    const { history } = this.props;
+    const destination = '/login';
     history.push(destination);
-    TokenService.clearAuthToken();
   }
 
   render() {

@@ -1,0 +1,27 @@
+header.landingHeader {
+  width:100vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+main.landing {
+  position:fixed;
+  top:15vh;
+  width:100vw;
+  height:77vh;
+  overflow:auto;
+  background-color: black;
+  color:#aaaaaa;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p.landing {
+  width:75vw;
+  text-align: center;
+  font-size: 20px;
+}

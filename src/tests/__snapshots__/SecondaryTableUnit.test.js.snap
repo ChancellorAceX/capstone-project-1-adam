@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SecondaryTableUnit component renders the full SecondaryTableUnit component 1`] = `
+<tr>
+  <th>
+    Resistances
+  </th>
+  <th>
+    radiant; bludgeoning, piercing, and slashing from nonmagical weapons
+  </th>
+</tr>
+`;

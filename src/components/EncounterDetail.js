@@ -27,6 +27,7 @@ export default withRouter(class EncounterDetail extends React.Component {
         <Header 
           pageName={this.props.encounters.find(e=>e.eid=== +this.props.match.params.eid).encountername}
           history={this.props.history}
+          loggedInToggle={this.props.loggedInToggle}
         />
         <main className='encounterbody'>
           <p>{this.props.encounters.find(e=>e.eid=== +this.props.match.params.eid).encounterdesc}</p>

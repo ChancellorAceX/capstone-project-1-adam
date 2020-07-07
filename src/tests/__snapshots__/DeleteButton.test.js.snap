@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeleteButton component renders the full delete button component 1`] = `
+<button
+  className="deleteButton"
+  onClick={[Function]}
+  type="button"
+>
+  🗑
+</button>
+`;

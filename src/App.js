@@ -13,6 +13,7 @@ import EncountersPage from './components/EncountersPage';
 import EncounterDetail from './components/EncounterDetail';
 import TokenService from './services/token-service';
 import Registration from './components/Registration';
+import LandingPage from './components/LandingPage';
 
 class App extends React.Component {
   state = {
@@ -30,8 +31,11 @@ class App extends React.Component {
     addMonsters: [{ monstername: 'Name', ac: 'AC', hp: '', maxhp: 'Max HP', pcbestiaryid: 'bid', initiative: 0 }],
     addEncounter: { encountername: '', encounterdesc: '', encountercampaignid: 0 },
     updateObject: {},
+    loggedIn: false,
     error: null
   };
+
+  loggedInToggle = (trueFalse) => this.setState({ loggedIn: trueFalse });
 
   nameSearchChangeHandle = (e) => this.setState({ nameSearch: e.target.value });
   typeSearchChangeHandle = (e) => this.setState({ typeSearch: e.target.value });
@@ -122,9 +126,9 @@ class App extends React.Component {
   addToAddMonsters = (e) => {
     e.preventDefault();
     this.setState({ addMonsters: [...this.state.addMonsters, this.state.addMonster] });
-    const Initiative=this.initiativeRoll(this.state.bestiary.find(beast=>beast.bid===this.state.addMonster.pcbestiaryid).dexmod);
+    const Initiative = this.initiativeRoll(this.state.bestiary.find(beast => beast.bid === this.state.addMonster.pcbestiaryid).dexmod);
     const HP = this.calculateHP(this.state.bestiary.find(beast => beast.bid === this.state.addMonster.pcbestiaryid).maxhp);
-    this.setState({ addMonster: { ...this.state.addMonster,initiative:Initiative, hp: HP, maxhp: HP } });
+    this.setState({ addMonster: { ...this.state.addMonster, initiative: Initiative, hp: HP, maxhp: HP } });
   };
 
   saveCampaign = (e) => {
@@ -195,6 +199,8 @@ class App extends React.Component {
       .then(res => res.json())
       .then(bestiary => this.setState({ bestiary }))
       .catch(error => console.log({ error }));
+
+    if (TokenService.hasAuthToken()) { this.loggedInToggle(true); }
   }
 
   render() {
@@ -206,6 +212,10 @@ class App extends React.Component {
         />
         <Route
           exact path='/'
+          render={() => <LandingPage />}
+        />
+        <Route
+          exact path='/bestiary'
           render={() => <Bestiary
             bestiary={this.state.bestiary}
             nameSearch={this.state.nameSearch}
@@ -223,24 +233,27 @@ class App extends React.Component {
             history={this.state.history}
           />}
         />
-        <Route path='/login'>
-          {TokenService.hasAuthToken() ?
+        <Route
+          path='/login'>
+          {this.state.loggedIn ?
             <Redirect to='/encounters' /> :
             <Login
               setEncounters={this.setEncounters}
               history={this.state.history}
+              loggedInToggle={this.loggedInToggle}
             />}
         </Route>
         <Route path='/register'>
-          {TokenService.hasAuthToken() ?
+          {this.state.loggedIn ?
             <Redirect to='/encounters' /> :
             <Registration
+              loggedInToggle={this.loggedInToggle}
               history={this.state.history}
               location={this.state.location}
             />}
         </Route>
         <Route path='/new/campaign'>
-          {!TokenService.hasAuthToken() ?
+          {!this.state.loggedIn ?
             <Redirect to='/login' /> :
             <NewCampaign
               addCampaign={this.state.addCampaign}
@@ -251,10 +264,11 @@ class App extends React.Component {
               setAddCharacter={this.setAddCharacter}
               saveCampaign={this.saveCampaign}
               history={this.state.history}
+              loggedInToggle={this.loggedInToggle}
             />}
         </Route>
         <Route path='/new/encounter'>
-          {!TokenService.hasAuthToken() ?
+          {!this.state.loggedIn ?
             <Redirect to='/login' /> :
             <NewEncounter
               bestiary={this.state.bestiary}
@@ -267,10 +281,11 @@ class App extends React.Component {
               setAddMonster={this.setAddMonster}
               saveEncounter={this.saveEncounter}
               history={this.state.history}
+              loggedInToggle={this.loggedInToggle}
             />}
         </Route>
         <Route path='/encounters'>
-          {!TokenService.hasAuthToken() ?
+          {!this.state.loggedIn ?
             <Redirect to='/login' /> :
             <EncountersPage
               campaigns={this.state.campaigns}
@@ -280,10 +295,11 @@ class App extends React.Component {
               setCampaigns={this.setCampaigns}
               setTargetState={this.setTargetState}
               history={this.state.history}
+              loggedInToggle={this.loggedInToggle}
             />}
         </Route>
         <Route path='/encounter/:eid'>
-          {!TokenService.hasAuthToken() ?
+          {!this.state.loggedIn ?
             <Redirect to='/login' /> :
             <EncounterDetail
               encounters={this.state.encounters}
@@ -293,6 +309,7 @@ class App extends React.Component {
               updateCharacter={this.updateCharacter}
               setTargetState={this.setTargetState}
               history={this.state.history}
+              loggedInToggle={this.loggedInToggle}
             />}
         </Route>
       </main >

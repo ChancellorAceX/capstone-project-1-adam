@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AbilityScoreTableUnit component renders the complete table unit 1`] = `
+<tr>
+  <th>
+    Strength
+  </th>
+  <th>
+    17
+  </th>
+  <th>
+    +3
+  </th>
+</tr>
+`;

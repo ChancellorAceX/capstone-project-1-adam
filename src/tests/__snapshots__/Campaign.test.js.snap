@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Campaign component renders the full campaign display unit 1`] = `
+<section
+  className="campaignListing"
+>
+  <h4
+    className="campaignTitle"
+  >
+    Azeroth
+    <DeleteButton
+      campaigns={
+        Array [
+          "[1, \\"Azeroth\\"]",
+          "[6, \\"Fillory\\"]",
+          "[7, \\"Grishaverse\\"]",
+        ]
+      }
+      id={1}
+      setTargetState="ƒ () {}"
+      target="campaign"
+    />
+  </h4>
+  <ul
+    className="campaignListing"
+  >
+    <EncounterListItem
+      encounter="{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}"
+      encounters={
+        Array [
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 6, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 7, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+        ]
+      }
+      setTargetState="ƒ () {}"
+    />
+    <EncounterListItem
+      encounter="{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}"
+      encounters={
+        Array [
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 6, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 7, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+        ]
+      }
+      setTargetState="ƒ () {}"
+    />
+    <EncounterListItem
+      encounter="{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}"
+      encounters={
+        Array [
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 6, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 7, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+          "{campaignuserid: 1, cid: 1, created: \\"2020-07-03T00…}",
+        ]
+      }
+      setTargetState="ƒ () {}"
+    />
+  </ul>
+</section>
+`;

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterEncounterListing component renders the full listing component 1`] = `
+<tr>
+  <td
+    className="viewLink"
+  >
+    <Link
+      className="viewLink"
+      to="/bestiary/1"
+    >
+      <button
+        className="viewLink"
+      >
+        View
+      </button>
+    </Link>
+  </td>
+  <td
+    className="name"
+  >
+    Aarakocra1
+  </td>
+  <td
+    className="init"
+  >
+    5
+  </td>
+  <td
+    className="ac"
+  >
+    12
+  </td>
+  <td
+    className="hp"
+  >
+    24/24
+  </td>
+  <td
+    className="buttons"
+  >
+    <button
+      className="editButton"
+      onClick={[Function]}
+      type="button"
+    >
+      Edit
+    </button>
+    <DeleteButton
+      encounterData={
+        Array [
+          "{ac: 50, hp: 72, hpmax: 100, initiative: 30, level:…}",
+          "{ac: 12, hp: 24, hpmax: 24, initiative: 5, level: n…}",
+          "{ac: 12, hp: 15, hpmax: 20, initiative: null, level…}",
+          "{ac: 18, hp: 32, hpmax: 32, initiative: null, level…}",
+        ]
+      }
+      id={16}
+      setTargetState="ƒ () {}"
+      target="character"
+    />
+  </td>
+</tr>
+`;

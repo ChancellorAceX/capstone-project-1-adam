@@ -1,14 +1,15 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
-// import TokenService from '../services/token-service';
+import TokenService from '../services/token-service';
 import '../styles/EncounterPage.css';
 import Header from './Header';
 import Campaign from './Campaign';
 
+
 export default withRouter(class EncountersPage extends React.Component {
   componentDidMount() {
-    this.props.fetchEncounters()
+    if(TokenService.hasAuthToken()){this.props.fetchEncounters()}
   };
 
   render() {
@@ -17,6 +18,7 @@ export default withRouter(class EncountersPage extends React.Component {
         <Header
           pageName='Encounters'
           history={this.props.history}
+          loggedInToggle={this.props.loggedInToggle}
         />
         <main className='encounters'>
         <section className='addButtonContainer'>

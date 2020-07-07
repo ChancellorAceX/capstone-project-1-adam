@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EncountersPage component renders the full encounters page component 1`] = `
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
+`;

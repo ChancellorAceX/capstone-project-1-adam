@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewCampaignCharacter component renders the full NewCampaignCharacter component 1`] = `
+<tr>
+  <th>
+    name
+  </th>
+  <th>
+    class: 1
+  </th>
+  <th>
+    10
+  </th>
+  <th>
+    14
+  </th>
+</tr>
+`;

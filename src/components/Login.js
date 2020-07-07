@@ -27,9 +27,11 @@ export default withRouter(class Login extends React.Component {
       .then(res=>res.json())
       .then(encounters=>this.props.setEncounters(encounters))
       .catch(error=>console.log({error}))
+    this.props.loggedInToggle(true)
     const { location, history } = this.props
     const destination = (location.state || {}).from || '/encounters'
     history.push(destination)
+
     
   }
 
@@ -57,6 +59,7 @@ export default withRouter(class Login extends React.Component {
       <main className='loginContainer'>
         <Header 
           pageName='Log In'
+          loggedInToggle={this.props.loggedInToggle}
           history={this.props.history}
         />
         <form className='loginForm' onSubmit={this.handleSubmitJwtAuth}>
@@ -67,10 +70,11 @@ export default withRouter(class Login extends React.Component {
           <label htmlFor='username'>Username:</label>
           <input type='text' id='username' placeholder='username' />
           <label htmlFor='password'>Password:</label>
-          <input type='text' id='password' placeholder='password'></input>
+          <input type='password' id='password' placeholder='password'></input>
           <button className='loginSubmit' type='submit'>Submit</button>
         </form>
         <p className='login'>New User? <Link to='/register'>Register Here!</Link></p>
+        <p>Just curious? Enter username: usera, password: usera, to have a look!</p>
       </main>
     );
   }

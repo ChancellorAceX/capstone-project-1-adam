@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders the full footer component 1`] = `
+<footer>
+  <Link
+    to="/"
+  >
+    <img
+      alt="alt"
+      className="footer"
+      src="magnifying-glass-2.png"
+    />
+  </Link>
+  <Link
+    to="/login"
+  >
+    <img
+      alt="alt"
+      className="footer"
+      src="map-2.png"
+    />
+  </Link>
+</footer>
+`;
