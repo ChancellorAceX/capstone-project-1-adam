@@ -24,13 +24,13 @@ export default withRouter(class EncounterDetail extends React.Component {
   render() {
     return (
       <section className='encountercontainer'>
-        <Header 
-          pageName={this.props.encounters.find(e=>e.eid=== +this.props.match.params.eid).encountername}
+        <Header
+          pageName={this.props.encounters.find(e => e.eid === +this.props.match.params.eid).encountername}
           history={this.props.history}
           loggedInToggle={this.props.loggedInToggle}
         />
         <main className='encounterbody'>
-          <p>{this.props.encounters.find(e=>e.eid=== +this.props.match.params.eid).encounterdesc}</p>
+          <p>{this.props.encounters.find(e => e.eid === +this.props.match.params.eid).encounterdesc}</p>
           <table className='encountermembers'>
             <tbody>
               <tr>
@@ -41,9 +41,9 @@ export default withRouter(class EncounterDetail extends React.Component {
                 <th className='hp'>HP</th>
                 <th className='buttons'></th>
               </tr>
-              {this.props.encounterData.sort((a,b)=>b.initiative-a.initiative).map((character,i) =>
+              {this.props.encounterData.sort((a, b) => b.initiative - a.initiative).map((character, i) =>
                 <CharacterEncounterListing
-                  key={character.pcname+` ${i}`}
+                  key={character.pcname + ` ${i}`}
                   character={character}
                   updateCharacter={this.props.updateCharacter}
                   setUpdateObject={this.props.setUpdateObject}

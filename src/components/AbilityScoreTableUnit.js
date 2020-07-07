@@ -7,5 +7,5 @@ export default function AbilityScoreTableUnit(props) {
       <th>{props.unit[1]}</th>
       <th>{props.unit[2]}</th>
     </tr>
-  )
+  );
 }

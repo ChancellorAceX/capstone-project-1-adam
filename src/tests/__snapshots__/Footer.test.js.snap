@@ -3,7 +3,7 @@
 exports[`Footer component renders the full footer component 1`] = `
 <footer>
   <Link
-    to="/"
+    to="/bestiary"
   >
     <img
       alt="alt"

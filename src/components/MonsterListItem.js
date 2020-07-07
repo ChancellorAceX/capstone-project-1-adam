@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function MonsterListItem(props) {
 
   return (
-    <Link to={`/bestiary/${props.monster.bid}`} style={{textDecoration:'none'}}>
+    <Link to={`/bestiary/${props.monster.bid}`} style={{ textDecoration: 'none' }}>
       <li className='monsterListing'>
         {/* possibly add an 'add to' button here */}
         <p className='name'>{props.monster.monstername}</p>

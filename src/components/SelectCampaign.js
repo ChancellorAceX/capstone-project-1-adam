@@ -5,5 +5,5 @@ export default function SelectCampaign(props) {
     <option value={props.campaign[0]}>
       {`${props.campaign[1]}`}
     </option>
-  )
+  );
 }

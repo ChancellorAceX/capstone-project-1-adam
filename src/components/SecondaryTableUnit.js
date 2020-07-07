@@ -6,5 +6,5 @@ export default function SecondaryTableUnit(props) {
       <th>{props.unit[0]}</th>
       <th>{props.unit[1]}</th>
     </tr>
-  )
+  );
 }

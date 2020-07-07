@@ -23,12 +23,12 @@ export default class CharacterEncounterListing extends React.Component {
           <td className='ac'>{ac}</td>
           <td className='hp'>{`${hp}/${hpmax}`}</td>
           <td className='buttons'><button className='editButton' onClick={this.toggleEdit} type='button'>Edit</button>
-          <DeleteButton
-            target='character'
-            id={this.props.character.pcid}
-            encounterData={this.props.encounterData}
-            setTargetState={this.props.setTargetState}
-          /></td>
+            <DeleteButton
+              target='character'
+              id={this.props.character.pcid}
+              encounterData={this.props.encounterData}
+              setTargetState={this.props.setTargetState}
+            /></td>
         </tr >
       )
       :
@@ -40,12 +40,12 @@ export default class CharacterEncounterListing extends React.Component {
           <td className='ac'>{ac}</td>
           <td className='hp'>{`${hp}/${hpmax}`}</td>
           <td className='buttons'><button className='editButton' onClick={this.toggleEdit} type='button'>Edit</button>
-          <DeleteButton
-            target='character'
-            id={this.props.character.pcid}
-            encounterData={this.props.encounterData}
-            setTargetState={this.props.setTargetState}
-          /></td>
+            <DeleteButton
+              target='character'
+              id={this.props.character.pcid}
+              encounterData={this.props.encounterData}
+              setTargetState={this.props.setTargetState}
+            /></td>
         </tr >
       )
       :

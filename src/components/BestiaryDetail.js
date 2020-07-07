@@ -53,7 +53,7 @@ export default withRouter(class BestiaryDetail extends React.Component {
               </tr>
               <tr>
                 <th>Hit Points</th>
-                <th>{(monster.maxhp.split(' + ')[0].split('d').reduce((a, b) => (a*b)/ 2)) + (Number(monster.maxhp.split(' + ')[1])||0)}</th>
+                <th>{(monster.maxhp.split(' + ')[0].split('d').reduce((a, b) => (a * b) / 2)) + (Number(monster.maxhp.split(' + ')[1]) || 0)}</th>
                 <th>{monster.maxhp}</th>
               </tr>
               <tr>

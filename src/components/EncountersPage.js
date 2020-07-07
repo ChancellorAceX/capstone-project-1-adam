@@ -9,7 +9,7 @@ import Campaign from './Campaign';
 
 export default withRouter(class EncountersPage extends React.Component {
   componentDidMount() {
-    if(TokenService.hasAuthToken()){this.props.fetchEncounters()}
+    if (TokenService.hasAuthToken()) { this.props.fetchEncounters(); }
   };
 
   render() {
@@ -21,7 +21,7 @@ export default withRouter(class EncountersPage extends React.Component {
           loggedInToggle={this.props.loggedInToggle}
         />
         <main className='encounters'>
-        <section className='addButtonContainer'>
+          <section className='addButtonContainer'>
             <Link to='/new/campaign'><button type='button'>+ Campaign</button></Link>
             <Link to='/new/encounter'><button type='button'>+ Encounter</button></Link>
           </section>

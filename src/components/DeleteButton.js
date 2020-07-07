@@ -21,7 +21,7 @@ export default class DeleteButton extends React.Component {
     const targetState = targetObject[this.props.target];
 
     const filteredArray = this.props[targetState].filter(item => item.pcid !== this.props.id && item[0] !== this.props.id && item.eid !== this.props.id);
-    
+
     this.props.setTargetState(targetState, filteredArray);
   };
 

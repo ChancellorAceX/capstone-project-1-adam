@@ -5,5 +5,5 @@ export default function SelectBeast(props) {
     <option value={props.monster.bid}>
       {`${props.monster.monstername} CR:${props.monster.cr}`}
     </option>
-  )
+  );
 }

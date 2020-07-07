@@ -11,29 +11,29 @@ export default withRouter(class Login extends React.Component {
   static defaultProps = {
     location: {},
     history: {
-      push: () => {},
+      push: () => { },
     },
   };
   state = { error: null };
 
   handleLoginSuccess = () => {
-    fetch(`${config.API_ENDPOINT}/api/encounter`,{
-        method:'GET',
-        headers: {
-          'content-type':'application/json',
-          'authorization':`bearer ${TokenService.getAuthToken()}`
-        }
-      })
-      .then(res=>res.json())
-      .then(encounters=>this.props.setEncounters(encounters))
-      .catch(error=>console.log({error}))
-    this.props.loggedInToggle(true)
-    const { location, history } = this.props
-    const destination = (location.state || {}).from || '/encounters'
-    history.push(destination)
+    fetch(`${config.API_ENDPOINT}/api/encounter`, {
+      method: 'GET',
+      headers: {
+        'content-type': 'application/json',
+        'authorization': `bearer ${TokenService.getAuthToken()}`
+      }
+    })
+      .then(res => res.json())
+      .then(encounters => this.props.setEncounters(encounters))
+      .catch(error => console.log({ error }));
+    this.props.loggedInToggle(true);
+    const { location, history } = this.props;
+    const destination = (location.state || {}).from || '/encounters';
+    history.push(destination);
 
-    
-  }
+
+  };
 
   handleSubmitJwtAuth = ev => {
     ev.preventDefault();
@@ -57,7 +57,7 @@ export default withRouter(class Login extends React.Component {
     const { error } = this.state;
     return (
       <main className='loginContainer'>
-        <Header 
+        <Header
           pageName='Log In'
           loggedInToggle={this.props.loggedInToggle}
           history={this.props.history}
@@ -78,4 +78,4 @@ export default withRouter(class Login extends React.Component {
       </main>
     );
   }
-})
+});

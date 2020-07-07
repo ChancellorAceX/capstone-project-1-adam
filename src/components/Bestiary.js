@@ -30,7 +30,7 @@ export default function Bestiary(props) {
             })}
         </ul>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

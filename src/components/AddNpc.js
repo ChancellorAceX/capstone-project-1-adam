@@ -13,7 +13,7 @@ export default function AddNpc(props) {
           />
         )}
       </select>
-      <button type='button' onClick={(e)=>{this.props.setAddMonster(e);this.props.addToAddMonsters(e);this.props.AddMonsters}}>+ Add Monster</button>
+      <button type='button' onClick={(e) => { this.props.setAddMonster(e); this.props.addToAddMonsters(e); props.AddMonsters; }}>+ Add Monster</button>
     </section>
   );
 }
