@@ -15,11 +15,11 @@ FYI, the information in the encounter builder may contain DM privileged informat
 This application uses a partner API with a postgresql/express database. The client side features react source code with vanilla css styling methods.
 
 ### Screenshots
-![Bestiary Page](./screenshots/screenshots/Beastiary.PNG "Bestiary")
-![Bestiary Detail Page](./screenshots/screenshots/BestiaryDetail.PNG "Bestiary Detail")
-![Login Page](./screenshots/screenshots/Login.PNG "Login")
-![Registration Page](./screenshots/screenshots/Registration.PNG "Registration")
-![Encounters Page](./screenshots/screenshots/Encounters.PNG "Encounters")
-![Encounter Detail Page](./screenshots/screenshots/EncounterDetail.PNG "Encounter Detail")
-![New Campaign Page](./screenshots/screenshots/NewCampaign.PNG "New Campaign")
-![New Encounter Page](./screenshots/screenshots/NewEncounter.PNG "New Encounter")
+![Bestiary Page](./screenshots/Beastiary.PNG)
+![Bestiary Detail Page](./screenshots/BestiaryDetail.PNG)
+![Login Page](./screenshots/Login.PNG)
+![Registration Page](./screenshots/Registration.PNG)
+![Encounters Page](./screenshots/Encounters.PNG)
+![Encounter Detail Page](./screenshots/EncounterDetail.PNG)
+![New Campaign Page](./screenshots/NewCampaign.PNG)
+![New Encounter Page](./screenshots/NewEncounter.PNG)
