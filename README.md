@@ -15,7 +15,7 @@ FYI, the information in the encounter builder may contain DM privileged informat
 This application uses a partner API with a postgresql/express database. The client side features react source code with vanilla css styling methods.
 
 ### Screenshots
-![Bestiary Page](./screenshots/Beastiary.PNG)
+![Bestiary Page](./screenshots/Bestiary.PNG)
 ![Bestiary Detail Page](./screenshots/BestiaryDetail.PNG)
 ![Login Page](./screenshots/Login.PNG)
 ![Registration Page](./screenshots/Registration.PNG)
