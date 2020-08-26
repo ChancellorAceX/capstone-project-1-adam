@@ -15,11 +15,11 @@ FYI, the information in the encounter builder may contain DM privileged informat
 This application uses a partner API with a postgresql/express database. The client side features react source code with vanilla css styling methods.
 
 ### Screenshots
-![Bestiary Page](./Wireframe-screenshots/screenshots/Bestiary.png?raw=true "Bestiary")
-![Bestiary Detail Page](./Wireframe-screenshots/screenshots/BestiaryDetail.png?raw=true "Bestiary Detail")
-![Login Page](./Wireframe-screenshots/screenshots/Login.png?raw=true "Login")
-![Registration Page](./Wireframe-screenshots/screenshots/Registration.png?raw=true "Registration")
-![Encounters Page](./Wireframe-screenshots/screenshots/Encounters.png?raw=true "Encounters")
-![Encounter Detail Page](./Wireframe-screenshots/screenshots/EncounterDetail.png?raw=true "Encounter Detail")
-![New Campaign Page](./Wireframe-screenshots/screenshots/NewCampaign.png?raw=true "New Campaign")
-![New Encounter Page](./Wireframe-screenshots/screenshots/NewEncounter.png?raw=true "New Encounter")
+![Bestiary Page](./screenshots/screenshots/Beastiary.PNG "Bestiary")
+![Bestiary Detail Page](./screenshots/screenshots/BestiaryDetail.PNG "Bestiary Detail")
+![Login Page](./screenshots/screenshots/Login.PNG "Login")
+![Registration Page](./screenshots/screenshots/Registration.PNG "Registration")
+![Encounters Page](./screenshots/screenshots/Encounters.PNG "Encounters")
+![Encounter Detail Page](./screenshots/screenshots/EncounterDetail.PNG "Encounter Detail")
+![New Campaign Page](./screenshots/screenshots/NewCampaign.PNG "New Campaign")
+![New Encounter Page](./screenshots/screenshots/NewEncounter.PNG "New Encounter")
