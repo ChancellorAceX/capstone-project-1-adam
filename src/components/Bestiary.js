@@ -1,9 +1,10 @@
 import React from 'react';
 import '../styles/Bestiary.css';
 import MonsterListItem from './MonsterListItem';
-import Footer from './Footer';
 
-export default function Bestiary(props) {
+
+
+const Bestiary = (props) => {
   return (
     <div className="App">
       <header className="App-header">
@@ -30,7 +31,8 @@ export default function Bestiary(props) {
             })}
         </ul>
       </main>
-      <Footer />
     </div>
   );
-}
+};
+
+export default Bestiary;
